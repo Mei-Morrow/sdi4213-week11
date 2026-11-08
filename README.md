@@ -38,7 +38,11 @@ docker run --rm -p 8501:8501 -e DEPLOY_ENV=Local-Docker helpdesk-cloud:week11
 Open `http://localhost:8501`.
 
 ## Cloud Deployment
-Follow the Week 11 Individual Exercise document in `docs/`.
+The Help Desk app is live at https://week11-helpdesk-zjxe.onrender.com.
+
+Render builds the app using the repository's Dockerfile and automatically
+deploys updates merged into `main`. The app stores tickets in managed
+PostgreSQL, and the database connection is configured in Render.
 
 ## Security
 - Do not commit `.env`.
